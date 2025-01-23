@@ -12,7 +12,12 @@ body {
     color: #747474;
 }
 
-
+#linha_amarela {
+    margin-bottom: 0px;
+    height: 1px;
+    background-color: #ededed;
+    border: none;
+}
 
 i.pen {
     color: #e0dd0d;
@@ -32,6 +37,10 @@ i.trash {
     padding: 8px 17px 8px 17px;
     color: #747474;
     font-size: 15px;
+}
+
+.btn_branco:hover {
+    color: #289ae7;
 }
 
 i.file {
@@ -56,13 +65,16 @@ h2 {
     padding: 5px 25px 5px 15px;
 }
 
-#add_new_user {
-    margin-right: 50px;
-}
-
 .users {
     width: 1100px;
     vertical-align: middle;
+    border-bottom: 1px solid #ededed;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+
+#add_new_user {
+    margin-right: 50px;
 }
 
 i.circle {
@@ -93,9 +105,21 @@ i.gear {
     padding: 0px 10px 0px 10px;
 }
 
+i.gear:hover {
+    font-size: 27px;
+    color: #2876aa;
+    padding: 0px 10px 0px 10px;
+}
+
 i.xmark {
     font-size: 25px;
     color: #eb4e4e;
+    padding: 0px 10px 0px 10px;
+}
+
+i.xmark:hover {
+    font-size: 27px;
+    color: #c74242;
     padding: 0px 10px 0px 10px;
 }
 
