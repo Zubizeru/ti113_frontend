@@ -1,11 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/pagina2.css">
+    <title>Página 2</title>
 </head>
+
 <body>
-    
+    <section>
+        <table class="user_management" cellspacing="0" cellpadding="5px">
+            <tr>
+                <th align="left" width="67%">
+                    <h2>
+                        User Management
+                    </h2>
+                </th>
+                <th>
+                    <button class="btn_branco"><i class="fa-solid fa-file file"></i></i>Export to Excel</button>
+                </th>
+                <th>
+                    <button class="btn_branco"><i class="fa-solid fa-circle-plus cplus"></i>Add New User</button>
+                </th>
+        </table>
+        </tr>
+
+        <table class="users" cellspacing="0" cellpadding="5">
+            <!-- 1 linha -->
+            <tr id="primeira_linha">
+                <th width=5%% class="linha">#</th>
+                <th width=23% class="linha">Name</th>
+                <th width=19% class="linha">Date Created</th>
+                <th width=19% class="linha">Role</th>
+                <th width=19% class="linha">Status</th>
+                <th width=15% id="action" class="linha">Action</th>
+            </tr>
+
+            <!-- 2 linha -->
+            <tr>
+                <td class="linha">1</td>
+                <th class="linha">
+                    <div class="nome">
+                        <div id="foto">
+                            <i class="fa-regular fa-circle circle"></i>
+                        </div>
+                        <div>
+                            </i>Michael Holz
+                        </div>
+                    </div>
+                </th>
+                <td class="linha">04/10/2013</td>
+                <td class="linha">Admin</td>
+                <td class="linha"><i class="fa-solid fa-circle solid_green"></i>Active</td>
+                <td class="linha_icones">
+                    <i class="fa-solid fa-gear gear"></i></i>
+                    <i class="fa-solid fa-circle-xmark xmark"></i></i>
+                </td>
+            </tr>
+            <!-- 3 linha -->
+            <tr>
+                <td class="linha">2</td>
+                <th class="linha">
+                    <div class="nome">
+                        <div id="foto">
+                            <i class="fa-regular fa-circle circle"></i>
+                        </div>
+                        <div>
+                            </i>Paula Wilson
+                        </div>
+                    </div>
+                </th>
+                <td class="linha">05/08/2014</td>
+                <td class="linha">Publisher</td>
+                <td class="linha"><i class="fa-solid fa-circle solid_green"></i>Active</td>
+                <td class="linha_icones">
+                    <i class="fa-solid fa-gear gear"></i></i>
+                    <i class="fa-solid fa-circle-xmark xmark"></i></i>
+                </td>
+            </tr>
+            <!-- 4 linha -->
+            <tr>
+                <td class="linha">3</td>
+                <th class="linha">
+                    <div class="nome">
+                        <div id="foto">
+                            <i class="fa-regular fa-circle circle"></i>
+                        </div>
+                        <div>
+                            </i>Antonio Moreno
+                        </div>
+                    </div>
+                </th>
+                <td class="linha">11/05/2015</td>
+                <td class="linha">Publisher</td>
+                <td class="linha"><i class="fa-solid fa-circle solid_red"></i>Suspended</td>
+                <td class="linha_icones">
+                    <i class="fa-solid fa-gear gear"></i></i>
+                    <i class="fa-solid fa-circle-xmark xmark"></i></i>
+                </td>
+            </tr>
+            <!-- 5 linha -->
+            <tr>
+                <td class="linha">4</td>
+                <th class="linha">
+                    <div class="nome">
+                        <div id="foto">
+                            <i class="fa-regular fa-circle circle"></i>
+                        </div>
+                        <div>
+                            </i>Mary Saveley
+                        </div>
+                    </div>
+                </th>
+                <td class="linha">06/09/2016</td>
+                <td class="linha">Reviewer</td>
+                <td class="linha"><i class="fa-solid fa-circle solid_green"></i>Active</td>
+                <td class="linha_icones">
+                    <i class="fa-solid fa-gear gear"></i></i>
+                    <i class="fa-solid fa-circle-xmark xmark"></i></i>
+                </td>
+            </tr>
+            <!-- 6 linha -->
+            <tr>
+                <td class="linha">5</td>
+                <th class="linha">
+                    <div class="nome">
+                        <div id="foto">
+                            <i class="fa-regular fa-circle circle"></i>
+                        </div>
+                        <div>
+                            </i>Michael Holz
+                        </div>
+                    </div>
+                </th>
+                <td class="linha">04/10/2013</td>
+                <td class="linha">Moderator</td>
+                <td class="linha"><i class="fa-solid fa-circle solid_yellow"></i>Inactive</td>
+                <td class="linha_icones">
+                    <i class="fa-solid fa-gear gear"></i></i>
+                    <i class="fa-solid fa-circle-xmark xmark"></i></i>
+                </td>
+            </tr>
+        </table>
+    </section>
+
 </body>
+
 </html>
