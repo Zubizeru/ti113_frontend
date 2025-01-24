@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entendendo Objeto Javascript</title>
 </head>
+
 <body>
+
+    <main>
+        <form action="" method="get">
+            <table>
+                <tr>
+                    <td>
+                        <label for="txt_nome">Nome: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="nome" id="txt_nome">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="txt_altura">Altura:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="altura" id="txt_altura">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="txt_idade">Idade:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="idade" id="txt_idade">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="txt_data_nascimento">Data de Nascimento:</label>
+                    </td>
+                    <td>
+                        <input type="date" name="data_nascimento" id="txt_data_nascimento">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button id="btn_mostrar" type="button">Mostrar</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <div id="resultado">
+            
+        </div>
+    </main>
+
     <script src="js/objeto.js"></script>
 </body>
+
 </html>
