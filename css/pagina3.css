@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    line-height: 1.5;
 }
 
 body {
@@ -41,6 +42,10 @@ body {
     text-decoration: none;
 }
 
+.headerlink:hover {
+    text-decoration: underline;
+}
+
 .principal {
     margin: 0 auto;
     width: 95%;
@@ -71,12 +76,12 @@ body {
 }
 
 p {
-    font-size: 24px;
+    font-size: 21px;
 }
 
 li {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 21px;
+    color: #383435;
 }
 
 h1 {
@@ -144,7 +149,7 @@ h1 {
     margin: 10px 0px 15px 0px;
     background-color: #c2c2c2;
     border: transparent;
-    padding: 5px 8px 5px 8px;
+    padding: 2px 10px 2px 10px;
     font-weight: bold;
     font-size: 17px;
 }
@@ -153,13 +158,19 @@ h1 {
     margin: 15px 0px 0px 0px;
 }
 
+.leia_mais:hover,
+.leia_mais1:hover {
+    background-color: #383435;
+    color: #ffffff;
+    cursor: pointer;
+}
+
 .mais_artigos ul {
     padding: 0px 20px 0px 20px;
 }
 
 #mais_artigos {
     background-color: #383435;
-    padding: 2px 0px 2px 0px;
     text-align: center;
 
 }
@@ -183,10 +194,12 @@ h1 {
     width: 95%;
     height: 40px;
     margin-top: 20px;
+    font-size: 24px;
 }
 
 #digite_o_termo::placeholder {
     font-size: 24px;
+    text-align: center; 
 }
 
 .mais_lidos {
@@ -214,7 +227,7 @@ h1 {
 }
 
 .lista_mais_lidos ul {
-    padding: 15px 40px 15px 50px;
+    padding: 25px 40px 25px 50px;
 }
 
 .imagens_aside {
@@ -226,23 +239,39 @@ h1 {
 }
 
 .img2 {
-    margin-top: 30px;
-    height: 230px;
-    width: 230px;
+    margin-top: 40px;
+    height: 14rem;
+    width: 14rem;
     background-color: white;
 }
 
 .cabecalho {
     margin: 0 auto;
     width: 95%;
-    margin-top: 15px;
+    margin-top: 20px;
     background-color: #6a6a6a;
     padding: 10px 25px 10px 25px;
     color: #ffffff;
-    
+
 }
 
 .headerlink2 {
     color: #ffffff;
     text-decoration: none;
+}
+
+.headerlink2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#webmaster {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#webmaster:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    cursor: pointer;
 }
