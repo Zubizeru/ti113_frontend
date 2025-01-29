@@ -23,7 +23,7 @@ body {
 }
 
 #txt_cssresponsivo {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #corpo {
@@ -33,7 +33,7 @@ body {
     justify-content: center;
     border-radius: 10px;
     border: 1px solid black;
-    padding: 15px 0px 15px 0px;
+    padding-top: 10px;
 }
 
 #quadrados_em_linha {
