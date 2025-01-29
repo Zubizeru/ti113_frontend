@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: "Varela Round", sans-serif;
+}
+
+.arrows {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+#txt_cssresponsivo {
+    margin-bottom: 10px;
+}
+
+#corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 15px 0px 15px 0px;
+}
+
+#quadrados_em_linha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+#quadrado1,
+#quadrado2,
+#quadrado3,
+#quadrado4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+}
+
+@media (max-width: 600px) {
+    #quadrado1 {
+        background-color: white;
+        border: 2px solid black;
+    }
+
+    #quadrado2 {
+        background-color: black;
+        border: 3px dotted red;
+    }
+
+    #quadrado3 {
+        background-color: yellow;
+        border: 2px dashed blue;
+    }
+
+    #quadrado4 {
+        background-color: blue;
+        border: 3px solid green;
+    }
+}
+
+@media (min-width: 600px) {
+    #quadrado1 {
+        background-color: yellow;
+    }
+
+    #quadrado2 {
+        background-color: pink;
+    }
+
+    #quadrado3 {
+        background-color: #C8A2C8;
+    }
+
+    #quadrado4 {
+        background-color: black;
+    }
+}
+
+@media (min-width: 800px) {
+    #quadrado1 {
+        background-color: black;
+    }
+
+    #quadrado2 {
+        background-color: red;
+    }
+
+    #quadrado3 {
+        background-color: purple;
+    }
+
+    #quadrado4 {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1000px) {
+    #quadrado1 {
+        background-color: green;
+    }
+
+    #quadrado2 {
+        background-color: yellow;
+    }
+
+    #quadrado3 {
+        background-color: blue;
+    }
+
+    #quadrado4 {
+        background-color: grey;
+    }
+
+}
