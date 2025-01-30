@@ -12,27 +12,33 @@
     height: 600px;
 }
 
+section {
+    display: flex;
+    justify-content: center;
+}
+
 figure {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 figcaption {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
     section {
-        display: flex;
         flex-direction: column;
     }
 }
 
 @media (min-width: 768px) {
-    section {
-        display: flex;
+    section {  
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -41,7 +47,6 @@ figcaption {
 @media (min-width: 1024px) {
 
     section {
-        display: flex;
         flex-direction: row;
     }
 }
