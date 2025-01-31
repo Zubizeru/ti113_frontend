@@ -1,0 +1,129 @@
+@import url("../css/reset.css");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.cabecalho {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #2a7d9e;
+    color: #ffffff;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: #2a7d9e;
+}
+
+.menu li{
+    border: 1px solid white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0px 5px 10px;
+}
+
+.headerlink {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.headerlink:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+}
+
+.artigo {
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.rodape {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #2a7d9e;
+    padding: 10px 20px;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) { 
+    .menu {
+        flex-direction: column;
+    }
+
+    #corpo {
+        background-color: #2a7d9e;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: white;
+        justify-content: center;
+    }
+    
+}
+
+@media (min-width: 768px) { 
+    #corpo {
+        background-color: #2a7d9e;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        color: white;
+        justify-content: center;
+    }
+
+    .artigo {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        width: 25vw;
+    }
+}
+
+@media (min-width: 992px) { 
+    .cabecalho,
+    .rodape {
+        width: 100%;
+    }
+    
+    .menu {
+        flex-direction: row;
+    }
+    
+    #corpo {
+        background-color: #2a7d9e;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: white;
+        justify-content: center;
+    }
+    
+    .artigo {
+        display: flex;
+        justify-content: flex-start;
+        width: 49vw;
+    }
+}
