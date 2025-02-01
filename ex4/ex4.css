@@ -1,0 +1,263 @@
+@import url("../css/reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    line-height: 2.3;
+}
+
+#corpo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00122c;
+}
+
+/*Header*/
+#cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+#lista ul {
+    list-style: none;
+    display: flex;
+}
+
+#lista ul li {
+    margin: 0 15px;
+}
+
+#lista ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+}
+
+#lista ul li a:hover {
+    color: #0865df;
+}
+
+#lista2 ul {
+    list-style: none;
+
+}
+
+#lista2 ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", serif;
+}
+
+#lista2 ul li a:hover {
+    color: #0865df;
+}
+
+#lista3 ul {
+    list-style: none;
+}
+
+#lista3 ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", serif;
+}
+
+#lista3 ul li a:hover {
+    color: #0865df;
+}
+
+i.chevron {
+    font-size: 14px;
+    padding-left: 3px;
+    color: #bebebe;
+}
+
+#img {
+    height: 50px;
+}
+
+#quote_btn {
+    background-color: #0865df;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 15px;
+}
+
+#quote_btn:hover {
+    background-color: #00122c;
+}
+
+#darkmode_btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+#darkmode_btn:hover {
+    background-color: #383838;
+    color: white;
+}
+
+/*=========================== Main ================================*/
+h3 {
+    color: #0865df;
+}
+
+#principal {
+    display: flex;
+    flex-direction: row;
+    background-color: #00122c;
+    color: white;
+    margin-top: 120px;
+    width: 85%;
+    justify-content: space-between;
+
+}
+
+#technoit {
+    width: 27%;
+}
+
+i.twitter,
+i.facebook,
+i.instagram,
+i.linkedin {
+    width: 35px;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+i.twitter:hover {
+    color: #1DA1F2;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+i.facebook:hover {
+    color: #4267B2;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+i.instagram:hover {
+    color: #C13584;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+i.linkedin:hover {
+    color: #0A66C2;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#img_dark {
+    width: 250px;
+    margin-bottom: 40px;
+}
+
+#services {
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#information {
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+#contacts {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+i.dot,
+i.phone,
+i.envelope {
+    margin-right: 10px;
+}
+
+#services_title,
+#information_title,
+#contacts_title,
+#newsletter_title,
+#follow_us_title {
+    font-size: 25px;
+}
+
+#newsletter_title {
+    margin-top: 25px;
+}
+
+#btn_plane {
+    display: flex;
+    align-items: center;
+    background-color: #e4e4e4;
+    width: fit-content;
+    border-radius: 50px;
+    padding: 1px 2px;
+    margin-top: 10px;
+}
+
+#email_address_input {
+    width: 350px;
+    background-color: #e4e4e4;
+    border: none;
+    height: 55px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+#email_address_input::placeholder {
+    padding: 0px 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+i.plane {
+    background-color: #025add;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+/*========================== Footer ===============================*/
+#zrthemes {
+    color: #0865df;
+}
+
+#rodape {
+    display: flex;
+    align-items: flex-end;
+    background: #fff;
+    width: 85%;
+    height: 25vh;
+    padding: 10px 0px;
+    background-color: #00122c;
+    color: #bebebe;
+}
