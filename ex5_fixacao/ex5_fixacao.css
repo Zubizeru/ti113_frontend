@@ -15,12 +15,12 @@
 }
 
 #principal {
-    width: 45%;
+    width: auto;
     display: flex;
     flex-direction: row;
     background-color: white;
     border-radius: 20px;
-    height: 70%;
+    height: auto;
 }
 
 #secao_img {
