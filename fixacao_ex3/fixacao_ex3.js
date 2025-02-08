@@ -1,4 +1,5 @@
 let pessoas = [];
+localStorage.clear()
 
 function cadastrarPessoa() {
     if (pessoas.length >= 3) {
