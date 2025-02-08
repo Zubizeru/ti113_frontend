@@ -196,7 +196,7 @@ input#conf_password:focus {
     background-color: #083d7e;
 }
 
-p a {
+#sign_in {
     text-decoration: none;
     color: #36b1e2;
     font-size: 13px;
