@@ -11,12 +11,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(45deg, #1d3575, #3399e4);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, 
+    #020024 0%, 
+    #090979 35%, 
+    #00d4ff 100%);
     height: 100vh;
 }
 
 #principal {
-    width: 90%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -28,7 +32,7 @@
 }
 
 #secao_img {
-    width: 49%;
+    width: 45%;
 }
 
 #secao_img img {
@@ -37,28 +41,105 @@
 }
 
 #registro {
-    width: 51%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5px 10px;
 }
 
-#register_title {
-    font-size: 45px;
-    font-weight: lighter;
+#title {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.register_div {
+    display: flex;
+    align-items: center;
+}
+
+.register_title {
+    font-size: 2.5rem;
+    font-weight: normal;
     color: #808080;
+}
+
+#contagemStorage {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #808080;
+    margin-left: 10px; /* Ajuste a margem conforme necessário */
+}
+
+form {
+    text-align: left;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    border-radius: 50px;
+    border: 0.1px solid #f1e8e8;
+    overflow: hidden;
+}
+
+.exclamation {
+    height: 100%;
+    width: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #083d7e;
+    font-weight: bold;
 }
 
 #username,
 #email,
 #password,
 #conf_password {
-    margin-top: 30px;
-    width: 100%;
-    height: 55px;
-    border-radius: 50px;
-    border: 0.1px solid #f1e8e8;
+    height: 100%;
+    width: 90%;
+    border: none;
+    font-size: 18px;
+    padding: 0px 20px;
+}
+
+#error_username,
+#error_email,
+#error_password,
+#error_conf_password {
+    margin-top: 10px;
+    height: 25px;
+    font-size: 11px;
+    font-weight: 300;
+    margin-left: 15px;
+    color: #083d7e;
+    font-weight: bold;
+}
+
+input#username:focus,
+input#email:focus,
+input#password:focus,
+input#conf_password:focus {
+    outline: none;
+}
+
+#username::placeholder,
+#email::placeholder,
+#password::placeholder,
+#conf_password::placeholder {
+    font-size: 18px;
+    color: #808080;
+}
+
+
+.buttons {
+    text-align: center;
 }
 
 #btnRegister {
@@ -71,14 +152,17 @@
     color: white;
 }
 
-#username::placeholder,
-#email::placeholder,
-#password::placeholder,
-#conf_password::placeholder {
-    font-size: 20px;
-    padding: 0px 30px;
-    color: #808080;
+#btnUnlock {
+    margin-top: 30px;
+    width: 100%;
+    height: 55px;
+    border-radius: 50px;
+    border: 0.5px solid transparent;
+    background-color: #dbb509;
+    color: white;
+    display: none;
 }
+
 
 #btnRegister:hover {
     background-color: #0c56b1;
@@ -119,7 +203,12 @@ p a {
 }
 
 i.google,
-i.facebook {
+i.facebook,
+i.lock {
     font-size: 20px;
     margin-right: 10px;
+}
+
+#mensagem {
+    margin-bottom: 5px;
 }

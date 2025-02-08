@@ -15,16 +15,41 @@
             <img id="img" src="../Imagem/fixacao_ex3.jpg" alt="">
         </section>
         <article id="registro">
-            <h3 id="register_title">Register</h3>
+            <div id="title">
+                <div class="register_div">
+                    <h3 class="register_title">Register</h3><span id="contagemStorage"></span>
+                </div>
+                <p id="mensagem"></p>
+            </div>
             <form action="#" method="get">
-                <input type="text" placeholder="Username" id="username">
-                <input type="email" placeholder="Email address" id="email">
-                <input type="password" placeholder="Password" id="password">
-                <input type="password" placeholder="Confirm password" id="conf_password">
-                <button id="btnRegister">REGISTER</button>
-                <p><a href="">Sign In</a></p>
-                <button id="btnGoogle"><i class="fa-brands fa-google google"></i>SIGN UP WITH GOOGLE</button>
-                <button id="btnFacebook"><i class="fa-brands fa-facebook-f facebook"></i>SIGN UP WITH FACEBOOK</button>
+                <p id="error_username"></p>
+                <div class="input">
+                    <input type="text" placeholder="Username" id="username">
+                    <i class="fa-solid fa-circle-exclamation exclamation"></i>
+                </div>
+                <p id="error_email"></p>
+                <div class="input">
+                    <input type="email" placeholder="Email address" id="email">
+                    <i class="fa-solid fa-circle-exclamation exclamation"></i>
+                </div>
+                <p id="error_password"></p>
+                <div class="input">
+                    <input type="password" placeholder="Password" id="password">
+                    <i class="fa-solid fa-circle-exclamation exclamation"></i>
+                </div>
+                <p id="error_conf_password"></p>
+                <div class="input">
+                    <input type="password" placeholder="Confirm password" id="conf_password">
+                    <i class="fa-solid fa-circle-exclamation exclamation"></i>
+                </div>
+                <div class="buttons">
+                    <button id="btnRegister">REGISTER</button>
+                    <button id="btnUnlock"><i class="fa-solid fa-lock lock"></i>UNLOCKER</button>
+                    <p><a href="">Sign In</a></p>
+                    <button id="btnGoogle"><i class="fa-brands fa-google google"></i>SIGN UP WITH GOOGLE</button>
+                    <button id="btnFacebook"><i class="fa-brands fa-facebook-f facebook"></i>SIGN UP WITH FACEBOOK</button>
+                </div>
+
             </form>
         </article>
     </main>
