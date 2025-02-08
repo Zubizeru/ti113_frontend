@@ -1,4 +1,5 @@
 let pessoas = [];
+
 function cadastrarPessoa() {
     if (pessoas.length >= 3) {
         document.querySelector("#mensagem").textContent = "Limite de cadastros atingido (máximo de 50 pessoas).";
@@ -146,13 +147,14 @@ btnRegister.addEventListener("click", cadastrarPessoa);
 
 let btnUnlock = document.querySelector("#btnUnlock");
 btnUnlock.addEventListener("click", function () {
-    btnRegister.style.display = "block";
-    btnUnlock.style.display = "none";
-    document.querySelector("#username").disabled = false;
-    document.querySelector("#email").disabled = false;
-    document.querySelector("#password").disabled = false;
-    document.querySelector("#conf_password").disabled = false;
+    if (!(pessoas.length >= 3)) {
+        btnRegister.style.display = "block";
+        btnUnlock.style.display = "none";
+        document.querySelector("#username").disabled = false;
+        document.querySelector("#email").disabled = false;
+        document.querySelector("#password").disabled = false;
+        document.querySelector("#conf_password").disabled = false;
+    }
 });
 
 carregarPessoas();
-
